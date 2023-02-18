@@ -32,14 +32,15 @@
                         <h3 class="text-2xl font-medium text-gray-700">Triangle</h3>
                         <p class="my-4 text-gray-600">Area (A) = 0.5 x b x h</p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-b-triangle"
-                                placeholder="b">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-b-triangle" placeholder="b">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-h-triangle"
-                                placeholder="h">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-h-triangle" placeholder="h">
                             <p>cm</p>
                         </div>
-                        <button id="btn-triangle" class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-triangle"
+                            class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
                 <!-- rectangle  -->
@@ -49,112 +50,131 @@
                         <h3 class="text-2xl font-medium text-gray-700">Rectangle</h3>
                         <p class="my-4 text-gray-600">Area (A) = w x I</p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-w-rectangle"
-                                placeholder="w">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-w-rectangle" placeholder="w">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-l-rectangle"
-                                placeholder="l">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-l-rectangle" placeholder="l">
                             <p>cm</p>
                         </div>
-                        <button id="btn-rectangle" class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-rectangle"
+                            class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
+                <!-- parallelogram -->
                 <div class="bg-white border border-gray-200 rounded-lg shadow text-center">
                     <img class="mx-auto p-8 h-56" src="images/parallelogram.png" alt="" />
                     <div class="p-5">
                         <h3 class="text-2xl font-medium text-gray-700">Parallelogram</h3>
                         <p class="my-4 text-gray-600">Area (A) = b x h</p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
-                                placeholder="b">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-b-parallel" placeholder="b">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
-                                placeholder="h">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-h-parallel" placeholder="h">
                             <p>cm</p>
                         </div>
-                        <button class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-Parallelogram"
+                            class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
                 <!-- calculation  -->
                 <div class="bg-white border border-gray-200 rounded-lg shadow text-center row-span-2">
                     <h1 class="font-medium text-2xl underline text-gray-700 mt-8">Area Calculation</h1>
+                    <!-- triangle  -->
                     <div id="area-triangle" class="flex justify-between items-center p-5 gap-1 hidden">
                         <p class="text-sm">1. Triangle </p>
                         <p class="text-sm"><span id="set-area-triangle">0.00</span>cm<sup>2</sup></p>
-                        <button class="bg-sky-600 hover:bg-sky-100 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                        <button class="bg-sky-600 hover:bg-sky-100 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
+                    <!-- rectangle  -->
                     <div id="area-rectangle" class="flex justify-between items-center p-5 gap-1 hidden">
                         <p class="text-sm">2. Rectangle</p>
                         <p class="text-sm"><span id="set-area-rectangle">0.00</span>cm<sup>2</sup></p>
-                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
-                    <div class="flex justify-between items-center p-5 gap-1 hidden">
-                        <p class="text-sm">3. Parallelogram</p>
-                        <p class="text-sm">12cm<sup>2</sup></p>
-                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                    <!-- parallelogram -->
+                    <div id="area-parallel" class="flex justify-between items-center p-5 gap-1 hidden">
+                        <p class="text-xs">3. Parallelogram</p>
+                        <p class="text-xs"><span id="set-area-parallel">0.00</span>cm<sup>2</sup></p>
+                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
-                    <div class="flex justify-between items-center p-5 gap-1 hidden">
+                    <!-- rhombus -->
+                    <div id="area-rhombus" class="flex justify-between items-center p-5 gap-1 hidden">
                         <p class="text-sm">4. Rhombus</p>
-                        <p class="text-sm">12cm<sup>2</sup></p>
-                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                        <p class="text-sm"><span id="set-area-rhombus">0.00</span>cm<sup>2</sup></p>
+                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
-                    <div class="flex justify-between items-center p-5 gap-1 hidden">
+                    <!-- pentagon -->
+                    <div id="area-pentagon" class="flex justify-between items-center p-5 gap-1 hidden">
                         <p class="text-sm">5. Pentagon</p>
-                        <p class="text-sm">12cm<sup>2</sup></p>
-                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                        <p class="text-sm"><span id="set-area-pentagon">0.00</span>cm<sup>2</sup></p>
+                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
-                    <div class="flex justify-between items-center p-5 gap-1 hidden">
+                    <!-- ellipse  -->
+                    <div id="area-ellipse" class="flex justify-between items-center p-5 gap-1 hidden">
                         <p class="text-sm">6. Ellipse</p>
-                        <p class="text-sm">12cm<sup>2</sup></p>
-                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to m<sup>2</sup></button>
+                        <p class="text-sm"><span id="set-area-ellipse">0.00</span>cm<sup>2</sup></p>
+                        <button class="bg-sky-600 text-white px-2 py-2 rounded text-xs">Convert to
+                            m<sup>2</sup></button>
                     </div>
                 </div>
+                <!-- Rhombus -->
                 <div class="bg-white border border-gray-200 rounded-lg shadow text-center">
                     <img class="mx-auto p-8 h-56" src="images/rhombus.png" alt="" />
                     <div class="p-5">
                         <h3 class="text-2xl font-medium text-gray-700">Rhombus</h3>
                         <p class="my-4 text-gray-600">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
-                                placeholder="d1">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-d1-rhombus" placeholder="d1">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
-                                placeholder="d2">
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name=""
+                                id="input-d2-rhombus" placeholder="d2">
                             <p>cm</p>
                         </div>
-                        <button class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-rhombus"
+                            class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
+                <!-- pentagon  -->
                 <div class="bg-white border border-gray-200 rounded-lg shadow text-center">
                     <img class="mx-auto p-8 h-56" src="images/pentagon.png" alt="" />
                     <div class="p-5">
                         <h3 class="text-2xl font-medium text-gray-700">Pentagon</h3>
                         <p class="my-4 text-gray-600">Area (A) = 0.5 x p x b</p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-p-pentagon"
                                 placeholder="p">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-b-pentagon"
                                 placeholder="b">
                             <p>cm</p>
                         </div>
-                        <button class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-pentagon" class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
+                <!-- Ellipse -->
                 <div class="bg-white border border-gray-200 rounded-lg shadow text-center">
                     <img class="mx-auto p-8 h-56" src="images/ellipse.png" alt="" />
                     <div class="p-5">
                         <h3 class="text-2xl font-medium text-gray-700">Ellipse</h3>
                         <p class="my-4 text-gray-600">Area (A) = πab</p>
                         <div class="flex gap-3 items-center justify-center text-gray-600">
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-a-ellipse"
                                 placeholder="a">
                             <p>cm</p>
-                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id=""
+                            <input class="bg-gray-200 py-1 w-16 text-center rounded" type="number" name="" id="input-b-ellipse"
                                 placeholder="b">
                             <p>cm</p>
                         </div>
-                        <button class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
+                        <button id="btn-ellipse" class="bg-sky-600 text-white px-20 py-2 rounded mt-8">Calculate</button>
                     </div>
                 </div>
 
