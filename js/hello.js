@@ -1,3 +1,4 @@
+// function declaration area 
 // get value from input field as string and convert them to a number 
 function takeInputMakeNumber(elementId){
     const getElement = document.getElementById(elementId);
@@ -26,6 +27,7 @@ function changeColor(elementId){
 document.getElementById('btn-blog').addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
+// function apply area 
 // triangle 
 document.getElementById('btn-triangle').addEventListener('click', function(){
     const base = takeInputMakeNumber('input-b-triangle');
