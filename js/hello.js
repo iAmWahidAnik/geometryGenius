@@ -4,16 +4,26 @@ function takeInputMakeNumber(elementId){
     const elementNumber = parseFloat(elementString);
     return elementNumber;
 }
-
 function getElementSetValue(elementId, value){
     const getElement = document.getElementById(elementId);
     getElement.innerText = value;
 }
-
+// validation function 
+// function validation(inputOne, inputTwo){
+//     if (inputOne <= 0 || inputTwo <= 0 || isNaN(inputOne) || isNaN(inputTwo)){
+//         alert ('please write the values correctly')
+//         return;
+//     }
+// }
 // triangle 
 document.getElementById('btn-triangle').addEventListener('click', function(){
     const base = takeInputMakeNumber('input-b-triangle');
     const height = takeInputMakeNumber('input-h-triangle');
+    // validation(base, height);
+    // if (base <= 0 || height <= 0 || isNaN(base) || isNaN(height)){
+    //     alert ('please write the values correctly')
+    //     return;
+    // }
     const area = 0.5 * base * height;
     getElementSetValue('set-area-triangle', area.toFixed(2));
     document.getElementById('area-triangle').classList.remove('hidden');
